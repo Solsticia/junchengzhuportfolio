@@ -1,55 +1,125 @@
-<html>
-    <head>
-        <title>My Page!</title>
-        <style>
-            section.featurebox.sales div{
-                margin: 1px;
-            }
-            #frank{
-                font-size: 200%;
-            }
-            li{
-                display: inline-block;
-                background-color: gray;
-                border-radius: 7px;
-                padding: 2px;
-                margin-left: 20px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauce's Personal Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
 
-            }
-            li:first-child{
-                margin-left: 0;
-            }
-            li:hover{
-                background-color:beige;
-            }
-            a{
-                text-decoration: none;
-            }
-            a:hover{
-                text-decoration: underline;
-            }
-        </style>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="locations.html">Locations</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <h1>Home</h1>
-        </header>
-        <section class="featurebox sales">triple-section
-            <div>a</div>
-            <div>b</div>
-            <div>c</div>
-        </section>
-        <section id="frank" class="featurebox closeouts">
-            <div>d</div>
-            <div>e</div>
-        </section>
-        <section>lower-section</section>
-        <footer>footer</footer>
-    </body>
-</html> 
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #398e3c;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .project {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .project button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .project button:hover {
+            background: #45a049;
+        }
+
+        .about {
+            padding: 20px;
+            background: #f1f1f1;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sauce's Personal Hub</h1>
+        <p>Welcome to my corner of creativity and chaos.</p>
+    </header>
+
+    <section class="projects">
+        <div class="project">
+            <button onclick="window.location.href='https://solsticia.github.io/fireworkVsAngo/'">Firework Vs Ango</button>
+            <p>A fun lunar-new-year theme shooting game. Hold left click to aim. Press [space] to pause. The game gets harder as your score increases. Good luck! PS: My own record is 126 points.</p>
+        </div>
+        <div class="project">
+            <button onclick="window.location.href='https://solsticia.github.io/hamsterSmash/'">Hamster Smash</button>
+            <p>Protect the b-day cakes from angos! Smash them down before they reach the cake! Save your cake by persisting for 60 seconds.</p>
+        </div>
+        <div class="project">
+            <button onclick="window.location.href='https://solsticia.github.io/onlineStudyRoom/'">Online Study Room</button>
+            <p>A quiet, online study room with a timer and calming music. Designed for focus without distractions.</p>
+        </div>
+        <div class="project">
+            <button onclick="window.location.href='https://solsticia.github.io/testFortune/'">Test Your Fortune</button>
+            <p>A fun website to test your daily fortune. Not satisfied? Refresh and try again. Repeated bad luck? Wash your face before retrying!</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Name: Sauce</p>
+        <p>Age: 17</p>
+        <p>Hobbies: Coding, gaming, and creating simple yet addictive projects.</p>
+        <p>Strengths: Quick learning, creativity, and a knack for problem-solving.</p>
+        <p>Things I Hate: Bugs (in code and in real life), slow internet, and over-complicated designs.</p>
+    </section>
+
+    <footer>
+        <p>Check out my <a href="https://github.com/Solsticia?tab=repositories">GitHub</a> for more projects. Special thanks to Solstice for being my favorite AI assistant!</p>
+    </footer>
+</body>
+</html>
